@@ -174,7 +174,8 @@ xTypography
 -------------------------------- */
 h1,
 h2 {
-  font-family: "Perpetua", serif;
+  @import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
+  font-family: "Viner Hand ITC", script;
   color: #19191a;
 }
 
