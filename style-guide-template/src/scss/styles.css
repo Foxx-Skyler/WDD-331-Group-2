@@ -172,9 +172,10 @@ main > h1 {
 xTypography 
 
 -------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
+
 h1,
 h2 {
-  @import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
   font-family: "Viner Hand ITC", script;
   color: #19191a;
 }
