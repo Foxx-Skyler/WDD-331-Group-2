@@ -1,0 +1,52 @@
+/* -------------------------------- 
+xButtons 
+-------------------------------- */
+
+.btn {
+  border: none;
+  box-shadow: none;
+  border-radius: 0.25em;
+  font-size: 1.4rem;
+  font-family: "Perpetua", serif;
+  color: #ffffff;
+  padding: 0.6em 2.2em;
+  cursor: pointer;
+  background: #942525;
+}
+.btn:focus {
+  outline: none;
+}
+.no-touch .btn:hover {
+  background: #B67575;
+}
+.btn.btn-success {
+  background: #7FA588;
+}
+.no-touch .btn.btn-success:hover {
+  background: #b0d9b9;
+}
+.btn.btn-alert {
+  background: #942525;
+}
+.no-touch .btn.btn-alert:hover {
+  background: #B67575;
+}
+.btn.btn-outline {
+  color: #000000;
+  background: transparent;
+  box-shadow: inset 0 0 0 1px #D1D0D0;
+}
+.no-touch .btn.btn-outline:hover {
+  color: #ffffff;
+  background: #D1D0D0;
+}
+@media only screen and (min-width: 768px) {
+  .btn {
+    font-size: 1.6rem;
+  }
+}
+
+.cd-buttons .cd-box:nth-of-type(2) span {
+  /* CSS class name color */
+  color: #5f8ee4;
+}
