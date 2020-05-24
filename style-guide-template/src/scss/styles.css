@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -53,9 +54,7 @@ table {
 }
 
 /* -------------------------------- 
-
 xBackground 
-
 -------------------------------- */
 body {
   /* this is the page background */
@@ -63,9 +62,7 @@ body {
 }
 
 /* -------------------------------- 
-
 xPatterns
-
 -------------------------------- */
 .cd-box {
   /* this is the container of various design elements - i.e. the 2 logo of the branding section */
@@ -77,9 +74,10 @@ xPatterns
 }
 
 /* -------------------------------- 
-
 xNavigation 
-
+-------------------------------- */
+/* -------------------------------- 
+xNavigation 
 -------------------------------- */
 header {
   background-color: #19191a;
@@ -90,37 +88,41 @@ header {
   background-color: #5f8ee4;
   width: 120px;
 }
+
 @media only screen and (min-width: 1024px) {
   .cd-logo {
     width: 180px;
   }
 }
-
 .cd-main-nav {
   /* main navigation background color - full screen on small devices */
   background: #19191a;
 }
+
 .cd-main-nav li a {
   color: #ffffff;
   border-color: #262627;
 }
+
 @media only screen and (min-width: 1024px) {
   .cd-main-nav li a {
     color: #7d7d82;
   }
+
   .cd-main-nav li a.selected {
     color: #ffffff;
     box-shadow: 0 2px 0 #5f8ee4;
   }
+
   .cd-main-nav li a:hover {
     color: #ffffff;
   }
 }
-
 .cd-nav-trigger span {
   /* hamburger menu */
   background-color: #ffffff;
 }
+
 .cd-nav-trigger span::before, .cd-nav-trigger span::after {
   /* upper and lower lines */
   background-color: #ffffff;
@@ -130,6 +132,7 @@ header {
   /* hide line in the center on mobile when nav is visible */
   background-color: rgba(255, 255, 255, 0);
 }
+
 .nav-is-visible .cd-nav-trigger span::before, .nav-is-visible .cd-nav-trigger span::after {
   /* preserve visibility of upper and lower lines - close icon */
   background-color: white;
@@ -139,44 +142,44 @@ header {
   /* download button top-right visible on big devices */
   background-color: #323234;
 }
+
 .no-touch .cd-download:hover {
   background-color: #3f3f41;
 }
+
 .cd-download span {
   /* tooltip */
   background: #5f8ee4;
   color: #ffffff;
 }
+
 .cd-download span::before {
   /* right arrow color */
   border-color: #5f8ee4;
 }
 
 /* -------------------------------- 
-
 xPage title 
-
 -------------------------------- */
 main > h1 {
   color: #19191a;
 }
+
 @media only screen and (min-width: 1600px) {
   main > h1 {
     /* title goes into the header on big devices */
     color: #ffffff;
   }
 }
-
 /* -------------------------------- 
-
 xTypography 
-
 -------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
-
+/* -------------------------------- 
+xTypography 
+-------------------------------- */
 h1,
 h2 {
-  font-family: 'Viner Hand ITC', Fantasy;
+  font-family: "Viner Hand ITC", Fantasy;
   color: #19191a;
 }
 
@@ -186,6 +189,7 @@ h1 {
   line-height: 1.2;
   margin: 0 0 0.4em;
 }
+
 @media only screen and (min-width: 768px) {
   h1 {
     font-size: 3.2rem;
@@ -196,19 +200,18 @@ h1 {
     font-size: 4rem;
   }
 }
-
 h2 {
   font-weight: bold;
   text-transform: uppercase;
   margin: 1em 0;
 }
+
 @media only screen and (min-width: 768px) {
   h2 {
     font-size: 1.8rem;
     margin: 1em 0 1.4em;
   }
 }
-
 section > h2::before {
   /* number before each section title */
   color: silver;
@@ -219,21 +222,23 @@ p {
   line-height: 1.4;
   color: #58585b;
 }
+
 p a {
   color: #5f8ee4;
   text-decoration: underline;
 }
+
 @media only screen and (min-width: 768px) {
   p {
     font-size: 1.6rem;
     line-height: 1.6;
   }
 }
-
 /* -------------------------------- 
-
 xButtons 
-
+-------------------------------- */
+/* -------------------------------- 
+xButtons 
 -------------------------------- */
 .btn {
   border: none;
@@ -246,48 +251,54 @@ xButtons
   cursor: pointer;
   background: #942525;
 }
+
 .btn:focus {
   outline: none;
 }
+
 .no-touch .btn:hover {
   background: #B67575;
 }
+
 .btn.btn-success {
   background: #7FA588;
 }
+
 .no-touch .btn.btn-success:hover {
   background: #b0d9b9;
 }
+
 .btn.btn-alert {
   background: #942525;
 }
+
 .no-touch .btn.btn-alert:hover {
   background: #B67575;
 }
+
 .btn.btn-outline {
   color: #000000;
   background: transparent;
   box-shadow: inset 0 0 0 1px #D1D0D0;
 }
+
 .no-touch .btn.btn-outline:hover {
   color: #ffffff;
   background: #D1D0D0;
 }
+
 @media only screen and (min-width: 768px) {
   .btn {
     font-size: 1.6rem;
   }
 }
-
 .cd-buttons .cd-box:nth-of-type(2) span {
   /* CSS class name color */
   color: #5f8ee4;
 }
 
 /* -------------------------------- 
-
 xIcons 
-
 -------------------------------- */
 .cd-icons li {
   /* icons size */
@@ -296,9 +307,10 @@ xIcons
 }
 
 /* -------------------------------- 
-
 xBasic style
-
+-------------------------------- */
+/* -------------------------------- 
+xBasic style
 -------------------------------- */
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
@@ -342,25 +354,28 @@ header {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   z-index: 10;
 }
+
 header nav {
   display: inline-block;
 }
+
 @media only screen and (min-width: 1024px) {
   header {
     height: 80px;
   }
+
   header::after {
     clear: both;
     content: "";
     display: block;
   }
 }
-
 .cd-logo {
   display: inline-block;
   height: 100%;
   position: relative;
 }
+
 .cd-logo img {
   position: absolute;
   display: block;
@@ -372,12 +387,12 @@ header nav {
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
+
 @media only screen and (min-width: 1600px) {
   .cd-logo {
     margin-left: 5%;
   }
 }
-
 .cd-nav-trigger {
   display: block;
   position: absolute;
@@ -389,6 +404,7 @@ header nav {
   white-space: nowrap;
   color: transparent;
 }
+
 .cd-nav-trigger span {
   position: absolute;
   height: 2px;
@@ -401,6 +417,7 @@ header nav {
   -moz-transition: background-color 0.3s 0.3s;
   transition: background-color 0.3s 0.3s;
 }
+
 .cd-nav-trigger span::before, .cd-nav-trigger span::after {
   content: "";
   position: absolute;
@@ -419,6 +436,7 @@ header nav {
   -moz-transition: transform 0.3s 0.3s;
   transition: transform 0.3s 0.3s;
 }
+
 .cd-nav-trigger span::before {
   -webkit-transform: translateY(-6px);
   -moz-transform: translateY(-6px);
@@ -426,6 +444,7 @@ header nav {
   -o-transform: translateY(-6px);
   transform: translateY(-6px);
 }
+
 .cd-nav-trigger span::after {
   -webkit-transform: translateY(6px);
   -moz-transform: translateY(6px);
@@ -433,12 +452,12 @@ header nav {
   -o-transform: translateY(6px);
   transform: translateY(6px);
 }
+
 @media only screen and (min-width: 1024px) {
   .cd-nav-trigger {
     display: none;
   }
 }
-
 .cd-main-nav {
   position: fixed;
   top: 0;
@@ -456,6 +475,7 @@ header nav {
   -moz-transition: transform 0.3s;
   transition: transform 0.3s;
 }
+
 .cd-main-nav li a {
   display: block;
   font-size: 1.8rem;
@@ -463,9 +483,11 @@ header nav {
   border-bottom-width: 1px;
   border-style: solid;
 }
+
 .cd-main-nav li:first-of-type a {
   border-top-width: 1px;
 }
+
 @media only screen and (min-width: 1024px) {
   .cd-main-nav {
     position: static;
@@ -481,11 +503,13 @@ header nav {
     padding: 0 2em;
     text-align: left;
   }
+
   .cd-main-nav li {
     display: table-cell;
     vertical-align: middle;
     padding: 0 1em;
   }
+
   .cd-main-nav li a {
     display: inline-block;
     font-size: 1.6rem;
@@ -495,6 +519,7 @@ header nav {
     -moz-transition: all 0.2s;
     transition: all 0.2s;
   }
+
   .cd-main-nav li:first-of-type a {
     border-top: none;
   }
@@ -504,7 +529,6 @@ header nav {
     display: none;
   }
 }
-
 .nav-is-visible .cd-nav-trigger span::before {
   -webkit-transform: translateY(0) rotate(-45deg);
   -moz-transform: translateY(0) rotate(-45deg);
@@ -512,6 +536,7 @@ header nav {
   -o-transform: translateY(0) rotate(-45deg);
   transform: translateY(0) rotate(-45deg);
 }
+
 .nav-is-visible .cd-nav-trigger span::after {
   -webkit-transform: translateY(0) rotate(45deg);
   -moz-transform: translateY(0) rotate(45deg);
@@ -519,6 +544,7 @@ header nav {
   -o-transform: translateY(0) rotate(45deg);
   transform: translateY(0) rotate(45deg);
 }
+
 .nav-is-visible .cd-main-nav {
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -541,6 +567,7 @@ header nav {
   -moz-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
+
 .cd-download span {
   /* tooltip */
   position: absolute;
@@ -557,6 +584,7 @@ header nav {
   -moz-transition: opacity 0.2s 0s, visibility 0s 0.2s;
   transition: opacity 0.2s 0s, visibility 0s 0.2s;
 }
+
 .cd-download span::before {
   /* right arrow */
   content: "";
@@ -571,6 +599,7 @@ header nav {
   border-bottom-color: transparent;
   border-right-color: transparent;
 }
+
 .no-touch .cd-download:hover span {
   opacity: 1;
   visibility: visible;
@@ -578,10 +607,12 @@ header nav {
   -moz-transition: opacity 0.2s 0s, visibility 0s 0s;
   transition: opacity 0.2s 0s, visibility 0s 0s;
 }
+
 @media only screen and (min-width: 1024px) {
   .cd-download {
     display: block;
   }
+
   .cd-download span {
     opacity: 0;
     visibility: hidden;
@@ -592,17 +623,18 @@ header nav {
     right: 5%;
   }
 }
-
 main {
   width: 90%;
   max-width: 1024px;
   margin: 0 auto;
   padding: 50px 0;
 }
+
 main > h1 {
   text-align: center;
   margin: 3em 0;
 }
+
 @media only screen and (min-width: 1024px) {
   main {
     padding-top: 80px;
@@ -613,6 +645,7 @@ main > h1 {
     max-width: none;
     padding: 120px 0 50px;
   }
+
   main > h1 {
     position: fixed;
     top: 0;
@@ -625,45 +658,56 @@ main > h1 {
     z-index: 20;
   }
 }
-
 section {
   margin: 3em 0;
 }
+
 section::after {
   clear: both;
   content: "";
   display: block;
 }
+
 section:nth-of-type(1) h2::before {
   content: "1. ";
 }
+
 section:nth-of-type(2) h2::before {
   content: "2. ";
 }
+
 section:nth-of-type(3) h2::before {
   content: "3. ";
 }
+
 section:nth-of-type(4) h2::before {
   content: "4. ";
 }
+
 section:nth-of-type(5) h2::before {
   content: "5. ";
 }
+
 section:nth-of-type(6) h2::before {
   content: "6. ";
 }
+
 section:nth-of-type(7) h2::before {
   content: "7. ";
 }
+
 section:nth-of-type(8) h2::before {
   content: "8. ";
 }
+
 section:nth-of-type(9) h2::before {
   content: "9. ";
 }
+
 section:nth-of-type(10) h2::before {
   content: "10. ";
 }
+
 @media only screen and (min-width: 768px) {
   section {
     margin: 3em 0 5em;
@@ -675,63 +719,73 @@ section:nth-of-type(10) h2::before {
     float: left;
     margin: 0 4% 4em 0;
   }
+
   section:nth-of-type(2n) {
     margin-right: 0;
   }
 }
-
 /* xBranding section - basic style */
 .cd-branding .cd-box {
   margin-bottom: 1em;
 }
+
 .cd-branding img {
   display: block;
   width: 100%;
 }
+
 .cd-branding ul:last-of-type {
   padding-top: 0.6em;
 }
+
 .cd-branding ul:last-of-type li {
   display: inline-block;
   margin-right: 1em;
 }
+
 .cd-branding ul:last-of-type li:nth-of-type(1) img {
   width: 90px;
   height: 90px;
   border-radius: 1em;
 }
+
 .cd-branding ul:last-of-type li:nth-of-type(2) img {
   width: 60px;
   height: 60px;
   border-radius: 0.6em;
 }
+
 .cd-branding ul:last-of-type li:nth-of-type(3) img {
   width: 32px;
   height: 32px;
   border-radius: 0.4em;
 }
+
 .cd-branding ul:last-of-type li:nth-of-type(4) img {
   width: 16px;
   height: 16px;
   border-radius: 0.2em;
 }
+
 @media only screen and (min-width: 768px) {
   .cd-branding .cd-box {
     width: 49%;
     float: left;
     margin: 0 2% 2em 0;
   }
+
   .cd-branding .cd-box:nth-of-type(2n) {
     margin-right: 0;
   }
+
   .cd-branding ul:last-of-type {
     clear: left;
   }
+
   .cd-branding ul:last-of-type li {
     margin-right: 3em;
   }
 }
-
 /* xColor section - basic style */
 .cd-colors li {
   text-align: center;
@@ -739,14 +793,17 @@ section:nth-of-type(10) h2::before {
   float: left;
   margin: 0 4% 1em 0;
 }
+
 .cd-colors li:nth-of-type(2n) {
   margin-right: 0;
 }
+
 .cd-colors .cd-color-swatch {
   position: relative;
   width: 100%;
   padding: 50% 0;
 }
+
 .cd-colors .cd-color-swatch::before, .cd-colors .cd-color-swatch::after {
   /* lighter and darker color shades of the same swatch */
   content: "";
@@ -755,81 +812,102 @@ section:nth-of-type(10) h2::before {
   width: 50%;
   height: 20%;
 }
+
 .cd-colors .cd-color-swatch::before {
   left: 0;
 }
+
 .cd-colors .cd-color-swatch::after {
   right: 0;
 }
+
 .cd-colors b {
   display: block;
   padding: 0.6em 0;
 }
+
 .cd-colors li:nth-of-type(1) .cd-color-swatch {
   background: #942525;
 }
+
 .cd-colors li:nth-of-type(1) .cd-color-swatch::before {
   background: #942525;
 }
+
 .cd-colors li:nth-of-type(1) .cd-color-swatch::after {
   background: #942525;
 }
+
 .cd-colors li:nth-of-type(2) .cd-color-swatch {
   background: #7FA588;
 }
+
 .cd-colors li:nth-of-type(2) .cd-color-swatch::before {
   background: #7FA588;
 }
+
 .cd-colors li:nth-of-type(2) .cd-color-swatch::after {
   background: #7FA588;
 }
+
 .cd-colors li:nth-of-type(3) .cd-color-swatch {
   background: #B67575;
 }
+
 .cd-colors li:nth-of-type(3) .cd-color-swatch::before {
   background: #B67575;
 }
+
 .cd-colors li:nth-of-type(3) .cd-color-swatch::after {
   background: #B67575;
 }
+
 .cd-colors li:nth-of-type(4) .cd-color-swatch {
   background: #D1D0D0;
 }
+
 .cd-colors li:nth-of-type(4) .cd-color-swatch::before {
   background: #D1D0D0;
 }
+
 .cd-colors li:nth-of-type(4) .cd-color-swatch::after {
   background: #D1D0D0;
 }
+
 .cd-colors li:nth-of-type(5) .cd-color-swatch {
   background: #000000;
 }
+
 .cd-colors li:nth-of-type(5) .cd-color-swatch::before {
   background: #000000;
 }
+
 .cd-colors li:nth-of-type(5) .cd-color-swatch::after {
   background: #000000;
 }
+
 @media only screen and (min-width: 768px) {
   .cd-colors li {
     width: 19%;
     float: left;
     margin: 0 1.25% 1em 0;
   }
+
   .cd-colors li:nth-of-type(2n) {
     margin-right: 1.25%;
   }
+
   .cd-colors li:nth-of-type(5n) {
     margin-right: 0;
   }
 }
-
 .cd-typography .cd-box,
 .cd-buttons .cd-box,
 .cd-icons .cd-box,
 .cd-form .cd-box {
   padding: 1em;
 }
+
 @media only screen and (min-width: 768px) {
   .cd-typography .cd-box .cd-box,
 .cd-buttons .cd-box .cd-box,
@@ -838,7 +916,6 @@ section:nth-of-type(10) h2::before {
     padding: 2em;
   }
 }
-
 /* xTypography section - basic style */
 .cd-typography h1::before {
   content: "Aa - ";
@@ -849,29 +926,33 @@ section:nth-of-type(10) h2::before {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
+
 .cd-buttons .cd-box:last-of-type {
   margin-top: -1px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
 .cd-buttons button {
   margin: 0.4em;
 }
+
 @media only screen and (min-width: 1024px) {
   .cd-buttons button {
     margin: 1em;
   }
 }
-
 /* xForm section - basic style */
 .cd-form input[type=text],
 .cd-form .cd-input-wrapper {
   margin: 1em;
 }
+
 .cd-form .cd-input-wrapper {
   position: relative;
   display: inline-block;
 }
+
 .cd-form select::-ms-expand {
   display: none;
 }
@@ -885,5 +966,7 @@ section:nth-of-type(10) h2::before {
 .no-csstransitions .cd-select::after {
   display: none;
 }
+
+/*# sourceMappingURL=styles.css.map */
 
 /*# sourceMappingURL=styles.css.map */
