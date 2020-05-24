@@ -930,13 +930,13 @@ section:nth-of-type(10) h2::before {
   background: #D1D0D0;
 }
 .cd-colors li:nth-of-type(5) .cd-color-swatch {
-  background: #ffffff;
+  background: #000000;
 }
 .cd-colors li:nth-of-type(5) .cd-color-swatch::before {
-  background: #ffffff;
+  background: #000000;
 }
 .cd-colors li:nth-of-type(5) .cd-color-swatch::after {
-  background: #ffffff;
+  background: #000000;
 }
 @media only screen and (min-width: 768px) {
   .cd-colors li {
