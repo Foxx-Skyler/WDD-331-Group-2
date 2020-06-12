@@ -1,4 +1,53 @@
-.page-wrapper {
+
+@import "variables";
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
     width: 50%;
-    margin: 0 30% 0 10%;
+    margin-left: 100px;
+}
+
+// header rotated on left
+header h2 {
+    position: fixed;
+    top: 310px;
+    left: -205px;
+    transform: rotate(-90deg);
+    font-size: 4em;
+}
+
+// spacing
+.page-wrapper {
+    padding: 2em;
+}
+
+p {
+    margin: 1em;
+}
+
+// borders and colors
+.main, .preamble, .summary, .sidebar {
+    border: $border-5;
+    padding: 2em;
+}
+
+// sidebar
+.design-selection {
+    border: $border-5;
+    position: fixed;
+    top: 90px;
+    right: 12%;
+    padding: 1em;
+    .design-name {
+        padding: 0.5em;
+        display: inline-block;
+    }
+
 }

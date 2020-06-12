@@ -2,13 +2,12 @@
 links, paragraphs and headers, sidebar, variables, transparancy,  */
 @import url("https://use.typekit.net/gac3gtr.css");
 @import url("https://allfont.es/allfont.css?fonts=matura-mt-script-capitals");
-@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 body {
   font-family: 'hightower-text', serif;
 }
 
-h1, h3, h4 {
+h1, h3, h4, .design-name {
   font-family: 'Matura MT Script Capitals', arial;
 }
 
@@ -16,8 +15,58 @@ h2, #zen-summary {
   font-family: 'Dancing Script', cursive;
 }
 
-.page-wrapper {
+a, li, abbr {
+  color: black;
+  text-decoration: none;
+  list-style: none;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
   width: 50%;
-  margin: 0 30% 0 10%;
+  margin-left: 100px;
+}
+
+header h2 {
+  position: fixed;
+  top: 310px;
+  left: -205px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  font-size: 4em;
+}
+
+.page-wrapper {
+  padding: 2em;
+}
+
+p {
+  margin: 1em;
+}
+
+.main, .preamble, .summary, .sidebar {
+  border: #000000 5px solid;
+  padding: 2em;
+}
+
+.design-selection {
+  border: #000000 5px solid;
+  position: fixed;
+  top: 90px;
+  right: 12%;
+  padding: 1em;
+}
+
+.design-selection .design-name {
+  padding: 0.5em;
+  display: inline-block;
 }
 /*# sourceMappingURL=style.css.map */
