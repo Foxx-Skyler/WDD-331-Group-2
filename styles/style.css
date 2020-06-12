@@ -1,6 +1,23 @@
 /*stylesheet for importing partials: typography, color, grid, parallax, importing images, 
 links, paragraphs and headers, sidebar, variables, transparancy,  */
+@import url("https://use.typekit.net/gac3gtr.css");
+@import url("https://allfont.es/allfont.css?fonts=matura-mt-script-capitals");
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 body {
-  font-family: fantasy;
+  font-family: 'hightower-text', serif;
+}
+
+h1, h3, h4 {
+  font-family: 'Matura MT Script Capitals', arial;
+}
+
+h2, #zen-summary {
+  font-family: 'Dancing Script', cursive;
+}
+
+.page-wrapper {
+  width: 50%;
+  margin: 0 30% 0 10%;
 }
 /*# sourceMappingURL=style.css.map */
