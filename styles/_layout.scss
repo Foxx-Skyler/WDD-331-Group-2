@@ -33,21 +33,82 @@ p {
 }
 
 // borders and colors
-.main, .preamble, .summary, .sidebar {
-    border: $border-5;
-    padding: 2em;
+.preamble, .summary, .explanation, .participation, .benefits, .requirements, .zen-resources, .sidebar {
+  border: $border-5;
+  padding: 2em;
+  background-color: $gray;
+}
+
+.summary {
+  background-color: none;
+}
+
+.preamble {
+  background-color: $light-red;
+}
+
+.zen-resources {
+  background-color: $main-red;
+}
+
+.explanation h3 {
+  background: $gray;
+  padding-top: 7em;
+  padding-bottom: 0em;
+  border-bottom: $border-5;
+  margin: -1.45em;
+  margin-bottom: 0.1em;
+}
+
+.explanation {
+  background-color: $bright-red;
+}
+
+.participation {
+  background-color: $main-red;
+}
+
+.benefits {
+  background-color: none;
+}
+
+.requirements {
+  background-color: $light-red;
 }
 
 // sidebar
-.design-selection {
-    border: $border-5;
+
+.sidebar {
+    border: $border-3;
+    border-radius: $border-radius-3;
     position: fixed;
-    top: 90px;
+    width: 23%;
+    top: 80px;
     right: 12%;
-    padding: 1em;
+    padding: 0.5em;
+    background-color: $light-red;
     .design-name {
         padding: 0.5em;
         display: inline-block;
     }
+}
 
+.design-selection ul {
+    border: $border-5;
+    border-radius: $border-radius-5;
+    padding: 1em;
+    background-color: $main-red;
+    .design-name {
+        padding: 0.5em;
+        display: inline-block;
+    }
+}
+
+.design-name::after {
+  content: "";
+  margin: 5em;
+}
+
+.design-archives {
+  padding-top: 1em;
 }
