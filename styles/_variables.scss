@@ -1,11 +1,19 @@
 
-// color variables
+// Colors
 $color-main-background:#9ECB9D;
 $color-background:#C3BEBE;
 $color-main:#942525;
 $color-secondary:#E84242;
 $color-main-variant:#A76464;
 $black:#000000;
+$light-red: rgba(149, 65, 65, 0.9);
+$main-red:#8a2222;
+$bright-red: rgba(236, 62, 62, 0.9);
+$gray:#bbb6b6;
+$transparent: 0.5;
 
-// border
+// Borders
+$border-3: $black 3px solid;
 $border-5: $black 5px solid;
+$border-radius-3: 5px;
+$border-radius-5: 15px;
