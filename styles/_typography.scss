@@ -7,9 +7,16 @@
 body {
     font-family: 'hightower-text', serif;
 }
-
 h1, h3, h4, .design-name {
     font-family: 'Matura MT Script Capitals', arial;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+design-name {
+  font-size: 2em;
 }
 
 h2, #zen-summary {
