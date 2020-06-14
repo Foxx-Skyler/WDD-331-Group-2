@@ -38,12 +38,15 @@ a, li, abbr {
   padding: 0;
 }
 
-body {
+body:before {
   position: fixed;
+  background-image: url('assets/leaves.png');
+}
+
+body {
   width: 50%;
   margin-left: 100px;
   background-color: #99DE9D;
-  background-image: url('assets/leaves.png');
 }
 
 header h2 {
