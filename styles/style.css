@@ -4,15 +4,23 @@ links, paragraphs and headers, sidebar, variables, transparancy,  */
 @import url("https://allfont.es/allfont.css?fonts=matura-mt-script-capitals");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 body {
-  font-family: 'hightower-text', serif;
+  font-family: "hightower-text", serif;
 }
 
 h1, h3, h4, .design-name {
-  font-family: 'Matura MT Script Capitals', arial;
+  font-family: "Matura MT Script Capitals", arial;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+design-name {
+  font-size: 2em;
 }
 
 h2, #zen-summary {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 }
 
 a, li, abbr {
@@ -21,11 +29,11 @@ a, li, abbr {
   list-style: none;
 }
 
+/*@import "grid";*/
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -39,8 +47,7 @@ header h2 {
   position: fixed;
   top: 310px;
   left: -205px;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
   font-size: 4em;
 }
 
@@ -52,21 +59,89 @@ p {
   margin: 1em;
 }
 
-.main, .preamble, .summary, .sidebar {
+.preamble, .summary, .explanation, .participation, .benefits, .requirements, .sidebar {
   border: #000000 5px solid;
   padding: 2em;
+  background-color: #bbb6b6;
 }
 
-.design-selection {
+.summary {
+  background-color: none;
+}
+
+.preamble {
+  background-color: rgba(149, 65, 65, 0.9);
+}
+
+aside div:nth-of-type(3) {
+  position:absolute;
+  margin-top: 135px;
+  width: 450px;
   border: #000000 5px solid;
-  position: fixed;
-  top: 90px;
-  right: 12%;
-  padding: 1em;
+  padding: 2em;
+  background-color:#8a2222;
 }
 
-.design-selection .design-name {
+
+
+.explanation h3 {
+  background: #bbb6b6;
+  padding-top: 7em;
+  padding-bottom: 0em;
+  border-bottom: #000000 5px solid;
+  margin: -1.45em;
+  margin-bottom: 0.1em;
+}
+
+.explanation {
+  background-color: rgba(236, 62, 62, 0.9);
+}
+
+.participation {
+  background-color: #8a2222;
+}
+
+.benefits {
+  background-color: none;
+}
+
+.requirements {
+  background-color: rgba(149, 65, 65, 0.9);
+}
+
+.sidebar {
+  border: #000000 3px solid;
+  border-radius: 5px;
+  position: fixed;
+  width: 23%;
+  top: 80px;
+  right: 12%;
+  padding: 0.5em;
+  background-color: rgba(149, 65, 65, 0.9);
+}
+.sidebar .design-name {
   padding: 0.5em;
   display: inline-block;
 }
+
+.design-selection ul {
+  border: #000000 5px solid;
+  border-radius: 15px;
+  padding: 1em;
+  background-color: #8a2222;
+}
+.design-selection ul .design-name {
+  padding: 0.5em;
+  display: inline-block;
+}
+
+.design-name::after {
+  content: "";
+  margin: 5em;
+}
+
+.design-archives {
+  padding-top: 1em;
+}
+
 /*# sourceMappingURL=style.css.map */
