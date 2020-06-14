@@ -42,7 +42,7 @@ body {
   width: 50%;
   margin-left: 100px;
   background-color: #99DE9D;
-  content:url('assets/leaves.png');
+  background-image: url('assets/leaves.png');
 }
 
 header h2 {
