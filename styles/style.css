@@ -66,7 +66,7 @@ p {
 }
 
 .summary:before {  
-  content:url('../assets/Koi--Logo.png');
+  content:url('assets/Koi--Logo.png');
 }
 
 .summary {
