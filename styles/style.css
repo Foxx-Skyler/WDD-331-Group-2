@@ -44,8 +44,8 @@ body {
   width: 50%;
   margin-left: 100px;
   background-image: url('assets/leaves.png');
-  background-width: 200%;
-  background-height: 200%;
+  background-width: 400%;
+  background-height: 400%;
   background-color: #99DE9D;
   background-attachment: fixed;
   background-position: center;
