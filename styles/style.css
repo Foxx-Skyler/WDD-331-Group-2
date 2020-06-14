@@ -39,15 +39,18 @@ a, li, abbr {
   padding: 0;
 }
 
-body {
-  width: 50%;
-  margin-left: 100px;
+body:before {
   background-image: url('assets/leaves.png');
-  background-width: 400%;
-  background-height: 400%;
+  background-width: 100%;
+  background-height: 100%;
   background-color: #99DE9D;
   background-attachment: fixed;
   background-position: center;
+}
+
+body {
+  width: 50%;
+  margin-left: 100px;
 }
 
 header h2 {
