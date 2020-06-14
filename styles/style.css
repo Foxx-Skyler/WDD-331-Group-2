@@ -39,15 +39,14 @@ a, li, abbr {
   padding: 0;
 }
 
-body:before {
-  position: fixed;
-  background-image: url('assets/leaves.png');
-}
-
 body {
   width: 50%;
   margin-left: 100px;
+  background-image: url('assets/leaves.png');
   background-color: #99DE9D;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 header h2 {
