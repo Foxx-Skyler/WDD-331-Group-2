@@ -42,8 +42,8 @@ a, li, abbr {
 
 body:before {
   background-image: url('assets/leaves.png');
-  background-width: 100%;
-  background-height: 100%;
+  background-width: 900px;
+  background-height: 900px;
   background-color: #99DE9D;
   background-attachment: fixed;
   background-position: center;
