@@ -41,18 +41,14 @@ a, li, abbr {
   padding: 0;
 }
 
-body:before {
-  background-image: url('assets/leaves.png');
-  background-width: 900px;
-  background-height: 900px;
-  background-color: #99DE9D;
-  background-attachment: fixed;
-  background-position: center;
-}
-
 body {
   width: 50%;
   margin-left: 100px;
+  background-image: url('assets/leaves.png');
+  background-size: 100%;
+  background-color: #99DE9D;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 header h2 {
