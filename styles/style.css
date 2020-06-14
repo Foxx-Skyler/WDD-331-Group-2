@@ -65,6 +65,10 @@ p {
   background-color: #bbb6b6;
 }
 
+.summary:before {  
+  content:url('../assets/Koi--Logo.png');
+}
+
 .summary {
   background-color: none;
 }
