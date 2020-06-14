@@ -74,6 +74,7 @@ p {
 
 .summary:before {  
   content:url('assets/Koi--Logo.png');
+  width: 200%;
 }
 
 .summary {
