@@ -3,26 +3,29 @@ links, paragraphs and headers, sidebar, variables, transparancy,  */
 @import url("https://use.typekit.net/gac3gtr.css");
 @import url("https://allfont.es/allfont.css?fonts=matura-mt-script-capitals");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
-
-
 body {
-  font-family: "hightower-text", serif;
+  font-family: 'hightower-text', serif;
 }
 
 h1, h3, h4, .design-name {
-  font-family: "Matura MT Script Capitals", arial;
+  font-family: 'Matura MT Script Capitals', arial;
 }
 
 h3 {
   font-size: 22px;
 }
 
-design-name {
-  font-size: 2em;
+.summary {
+  text-align: center;
+}
+
+.summary p:nth-of-type(2) {
+  font-family: 'hightower-text', serif;
+  font-size: 0.8em;
 }
 
 h2, #zen-summary {
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
 }
 
 a, li, abbr {
@@ -31,59 +34,108 @@ a, li, abbr {
   list-style: none;
 }
 
-/*@import "grid";*/
+/*grid for mobile devices*/
+.page-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 87%;
+      grid-template-columns: 1fr 87%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+.page-wrapper .intro, .page-wrapper .main, .page-wrapper .sidebar {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+/*grid for screens*/
+@media only screen and (min-width: 490px) {
+  .page-wrapper {
+    margin: 10px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 45% 1fr 280px 1fr;
+        grid-template-columns: 1fr 45% 1fr 280px 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+  .page-wrapper .intro, .page-wrapper .main {
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+  .page-wrapper .sidebar {
+    -ms-grid-column: 4;
+    grid-column: 4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / 3;
+  }
+}
+
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body {
-  width: 50%;
-  margin-left: 100px;
-  background-image: url('assets/leaves.png');
-  background-size: 100%;
-  background-color: #99DE9D;
-  background-attachment: fixed;
-  background-position: center;
+.intro h1 {
+  display: none;
 }
 
-header h2 {
+/*header rotated on left*/
+.intro h2 {
   position: fixed;
-  top: 310px;
-  left: -205px;
-  transform: rotate(-90deg);
-  font-size: 4em;
-}
-
-.page-wrapper {
-  padding: 2em;
+  text-align: right;
+  top: 10em;
+  left: 0;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  font-size: 10vw;
 }
 
 p {
-  margin: 1em;
+  background-color: #C3BEBE;
+  padding: 1em;
+  margin-bottom: -2px;
 }
 
-.preamble, .summary, .explanation, .participation, .benefits, .requirements, .sidebar {
-  border: #000000 5px solid;
-  padding: 2em;
-  background-color: #bbb6b6;
+.summary p {
+  margin-top: -2px;
 }
 
-.summary:before {  
-  content:url('assets/Koi--Logo.png');
-  width: 200%;
+.intro, .main, .wrapper, footer, h3 {
+  outline: 5px solid;
 }
 
-.summary {
-  background-color: none;
+h3 {
+  background: rgba(149, 65, 65, 0.9);
+  padding: 1em;
 }
 
+footer {
+  background-color: #942525;
+  padding: 1em;
+}
+
+aside {
+  background-color: #942525;
+}
+
+aside ul {
+  padding: 1em;
+}
+
+/*
 .preamble {
-  background-color: rgba(149, 65, 65, 0.9);
+  background-color: $light-red;
 }
+
 
 aside div:nth-of-type(3) {
   position:absolute;
@@ -91,26 +143,28 @@ aside div:nth-of-type(3) {
   width: 450px;
   border: #000000 5px solid;
   padding: 2em;
-  background-color:#8a2222;
+  background-color: $main-red;
 }
 
-
+.zen-resources {
+  background-color: $main-red;
+}
 
 .explanation h3 {
-  background: #bbb6b6;
+  background: $gray;
   padding-top: 7em;
   padding-bottom: 0em;
-  border-bottom: #000000 5px solid;
+  border-bottom: $border-5;
   margin: -1.45em;
   margin-bottom: 0.1em;
 }
 
 .explanation {
-  background-color: rgba(236, 62, 62, 0.9);
+  background-color: $bright-red;
 }
 
 .participation {
-  background-color: #8a2222;
+  background-color: $main-red;
 }
 
 .benefits {
@@ -118,33 +172,36 @@ aside div:nth-of-type(3) {
 }
 
 .requirements {
-  background-color: rgba(149, 65, 65, 0.9);
+  background-color: $light-red;
 }
 
+
+// sidebar
+
 .sidebar {
-  border: #000000 3px solid;
-  border-radius: 5px;
-  position: fixed;
-  width: 23%;
-  top: 80px;
-  right: 12%;
-  padding: 0.5em;
-  background-color: rgba(149, 65, 65, 0.9);
-}
-.sidebar .design-name {
-  padding: 0.5em;
-  display: inline-block;
+    border: $border-3;
+    border-radius: $border-radius-3;
+    position: fixed;
+    width: 23%;
+    top: 80px;
+    right: 12%;
+    padding: 0.5em;
+    background-color: $light-red;
+    .design-name {
+        padding: 0.5em;
+        display: inline-block;
+    }
 }
 
 .design-selection ul {
-  border: #000000 5px solid;
-  border-radius: 15px;
-  padding: 1em;
-  background-color: #8a2222;
-}
-.design-selection ul .design-name {
-  padding: 0.5em;
-  display: inline-block;
+    border: $border-5;
+    border-radius: $border-radius-5;
+    padding: 1em;
+    background-color: $main-red;
+    .design-name {
+        padding: 0.5em;
+        display: inline-block;
+    }
 }
 
 .design-name::after {
@@ -154,6 +211,59 @@ aside div:nth-of-type(3) {
 
 .design-archives {
   padding-top: 1em;
+}*/
+@media only screen and (min-width: 490px) {
+  .intro h2 {
+    font-size: 6vw;
+    left: 30px;
+  }
+  aside {
+    margin: 1em;
+    padding: 2em 0.8em;
+    background-color: #942525;
+    border: black 5px solid;
+    border-radius: 20px/40px 0;
+  }
+  aside ul {
+    padding: 1em;
+    background-color: #C3BEBE;
+  }
+  aside ul .design-name {
+    padding-top: 0.6em;
+    display: inline-block;
+  }
+  .design-name::after {
+    content: "";
+    margin: 5em;
+  }
+  .design-archives {
+    padding-top: 1em;
+  }
 }
 
+/*added leaves image to background*/
+body {
+  background-image: url("assets/leaves.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/*add in the koi logo!*/
+header {
+  width: 100%;
+  height: 250px;
+  background-color: #C3BEBE;
+  background-image: url("assets/Koi--Logo.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media only screen and (min-width: 490px) {
+  header {
+    background-size: 90%;
+    height: 350px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

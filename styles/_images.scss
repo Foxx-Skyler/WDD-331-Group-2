@@ -1,0 +1,28 @@
+@import 'variables';
+
+/*added leaves image to background*/
+body {
+    background-image: url('assets/leaves.png');
+    background-repeat: no-repeat;
+    //background-color: #99DE9D;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*add in the koi logo!*/
+header { 
+    width: 100%;
+    height: 250px; 
+    background-color: $color-background;
+    background-image: url('assets/Koi--Logo.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media only screen and (min-width: 490px) {
+    header {
+        background-size: 90%;
+        height: 350px;
+    }
+}
