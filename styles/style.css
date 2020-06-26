@@ -11,8 +11,8 @@ h1, h3, h4, .design-name {
   font-family: 'Matura MT Script Capitals', arial;
 }
 
-h3 {
-  font-size: 22px;
+body {
+  font-size: 1.3em;
 }
 
 .summary {
@@ -21,6 +21,10 @@ h3 {
 
 .summary p:nth-of-type(2) {
   font-family: 'hightower-text', serif;
+  font-size: 0.9em;
+}
+
+.summary p:nth-of-type(1) {
   font-size: 0.8em;
 }
 
@@ -32,6 +36,18 @@ a, li, abbr {
   color: black;
   text-decoration: none;
   list-style: none;
+}
+
+@media only screen and (min-width: 520px) {
+  .summary p:nth-of-type(1) {
+    font-size: 1.5em;
+  }
+  body {
+    font-size: 1em;
+  }
+  aside h3 {
+    font-size: 1em;
+  }
 }
 
 /*grid for mobile devices*/
@@ -50,13 +66,12 @@ a, li, abbr {
 }
 
 /*grid for screens*/
-@media only screen and (min-width: 490px) {
+@media only screen and (min-width: 520px) {
   .page-wrapper {
-    margin: 10px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 45% 1fr 280px 1fr;
-        grid-template-columns: 1fr 45% 1fr 280px 1fr;
+    -ms-grid-columns: 8% 45% 1fr 250px 1fr;
+        grid-template-columns: 8% 45% 1fr 250px 1fr;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
   }
@@ -68,8 +83,7 @@ a, li, abbr {
     -ms-grid-column: 4;
     grid-column: 4;
     -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    grid-row: 1 / 3;
+    grid-row: 1;
   }
 }
 
@@ -99,23 +113,31 @@ a, li, abbr {
   font-size: 10vw;
 }
 
+.intro, .main, .wrapper, footer, h3 {
+  outline: 5px solid;
+}
+
+.summary p:nth-of-type(1) {
+  padding-top: 70vw;
+}
+
+h3 {
+  background: rgba(149, 65, 65, 0.9);
+  padding: 0.6em 1em;
+}
+
 p {
   background-color: #C3BEBE;
   padding: 1em;
   margin-bottom: -2px;
 }
 
-.summary p {
-  margin-top: -2px;
+a:hover {
+  color: #942525;
 }
 
-.intro, .main, .wrapper, footer, h3 {
-  outline: 5px solid;
-}
-
-h3 {
-  background: rgba(149, 65, 65, 0.9);
-  padding: 1em;
+a:active {
+  color: white;
 }
 
 footer {
@@ -123,126 +145,42 @@ footer {
   padding: 1em;
 }
 
-aside {
-  background-color: #942525;
-}
-
 aside ul {
+  background-color: #C3BEBE;
   padding: 1em;
 }
 
-/*
-.preamble {
-  background-color: $light-red;
+aside ul .design-name {
+  padding-top: 0.6em;
+  display: block;
 }
 
-
-aside div:nth-of-type(3) {
-  position:absolute;
-  margin-top: 95px;
-  width: 450px;
-  border: #000000 5px solid;
-  padding: 2em;
-  background-color: $main-red;
-}
-
-.zen-resources {
-  background-color: $main-red;
-}
-
-.explanation h3 {
-  background: $gray;
-  padding-top: 7em;
-  padding-bottom: 0em;
-  border-bottom: $border-5;
-  margin: -1.45em;
-  margin-bottom: 0.1em;
-}
-
-.explanation {
-  background-color: $bright-red;
-}
-
-.participation {
-  background-color: $main-red;
-}
-
-.benefits {
-  background-color: none;
-}
-
-.requirements {
-  background-color: $light-red;
-}
-
-
-// sidebar
-
-.sidebar {
-    border: $border-3;
-    border-radius: $border-radius-3;
-    position: fixed;
-    width: 23%;
-    top: 80px;
-    right: 12%;
-    padding: 0.5em;
-    background-color: $light-red;
-    .design-name {
-        padding: 0.5em;
-        display: inline-block;
-    }
-}
-
-.design-selection ul {
-    border: $border-5;
-    border-radius: $border-radius-5;
-    padding: 1em;
-    background-color: $main-red;
-    .design-name {
-        padding: 0.5em;
-        display: inline-block;
-    }
-}
-
-.design-name::after {
+aside ul .design-name::after {
   content: "";
-  margin: 5em;
 }
 
-.design-archives {
+aside ul .design-archives {
   padding-top: 1em;
-}*/
-@media only screen and (min-width: 490px) {
+}
+
+@media only screen and (min-width: 520px) {
   .intro h2 {
     font-size: 6vw;
-    left: 30px;
+  }
+  .summary p:nth-of-type(1) {
+    padding: 10px 5vw;
+    padding-top: 32vw;
   }
   aside {
-    margin: 1em;
+    min-height: 90%;
     padding: 2em 0.8em;
-    background-color: #942525;
-    border: black 5px solid;
-    border-radius: 20px/40px 0;
-  }
-  aside ul {
-    padding: 1em;
-    background-color: #C3BEBE;
-  }
-  aside ul .design-name {
-    padding-top: 0.6em;
-    display: inline-block;
-  }
-  .design-name::after {
-    content: "";
-    margin: 5em;
-  }
-  .design-archives {
-    padding-top: 1em;
+    background: none;
   }
 }
 
 /*added leaves image to background*/
-body {
+.page-wrapper {
+  min-width: auto;
   background-image: url("assets/leaves.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -251,19 +189,20 @@ body {
 
 /*add in the koi logo!*/
 header {
-  width: 100%;
-  height: 250px;
-  background-color: #C3BEBE;
+  position: absolute;
+  width: 85%;
+  height: 70vw;
   background-image: url("assets/Koi--Logo.png");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-@media only screen and (min-width: 490px) {
+@media only screen and (min-width: 520px) {
   header {
-    background-size: 90%;
-    height: 350px;
+    margin-left: 3vw;
+    width: 40%;
+    height: 32vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

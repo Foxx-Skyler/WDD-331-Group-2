@@ -8,7 +8,6 @@
   padding: 0;
 }
 
-
 .intro h1 {
   display: none; //hide this since the title is in the logo
 }
@@ -24,24 +23,31 @@
     font-size: 10vw;   
 }
 
+.intro, .main, .wrapper, footer, h3 {
+  outline: 5px solid;
+}
+
+.summary p:nth-of-type(1) {
+  padding-top: 70vw;
+}
+
+h3 {
+  background:$light-red;
+  padding: 0.6em 1em;
+}
+
 p {
   background-color: $color-background;
   padding: 1em;
   margin-bottom: -2px;
 }
 
-.summary p {
-  margin-top: -2px;
+a:hover {
+  color: $color-main;
 }
 
-.intro, .main, .wrapper, footer, h3 {
-  outline: 5px solid;
-}
-
-h3 {
-  background:$light-red;
-  padding: 1em;
-
+a:active {
+  color: white;
 }
 
 footer {
@@ -50,123 +56,36 @@ footer {
 }
 
 aside {
-  background-color: $color-main;
   ul {
+    background-color: $color-background;
     padding: 1em;
-  }
-}
-/*
-.preamble {
-  background-color: $light-red;
-}
-
-
-aside div:nth-of-type(3) {
-  position:absolute;
-  margin-top: 95px;
-  width: 450px;
-  border: #000000 5px solid;
-  padding: 2em;
-  background-color: $main-red;
-}
-
-.zen-resources {
-  background-color: $main-red;
-}
-
-.explanation h3 {
-  background: $gray;
-  padding-top: 7em;
-  padding-bottom: 0em;
-  border-bottom: $border-5;
-  margin: -1.45em;
-  margin-bottom: 0.1em;
-}
-
-.explanation {
-  background-color: $bright-red;
-}
-
-.participation {
-  background-color: $main-red;
-}
-
-.benefits {
-  background-color: none;
-}
-
-.requirements {
-  background-color: $light-red;
-}
-
-
-// sidebar
-
-.sidebar {
-    border: $border-3;
-    border-radius: $border-radius-3;
-    position: fixed;
-    width: 23%;
-    top: 80px;
-    right: 12%;
-    padding: 0.5em;
-    background-color: $light-red;
     .design-name {
-        padding: 0.5em;
-        display: inline-block;
-    }
-}
-
-.design-selection ul {
-    border: $border-5;
-    border-radius: $border-radius-5;
-    padding: 1em;
-    background-color: $main-red;
-    .design-name {
-        padding: 0.5em;
-        display: inline-block;
-    }
-}
-
-.design-name::after {
-  content: "";
-  margin: 5em;
-}
-
-.design-archives {
-  padding-top: 1em;
-}*/
-
-@media only screen and (min-width: 490px) {
-  .intro h2 {
-    font-size: 6vw;
-    left: 30px;
-  }
-
-  // sidebar
-  aside {
-      margin: 1em;
-      padding: 2em 0.8em;
-      background-color: $color-main;
-      border: black 5px solid;
-      border-radius: 20px/40px 0;
-  }
-
-  aside ul {
-      padding: 1em;
-      background-color: $color-background;
-      .design-name {
           padding-top: 0.6em;
-          display: inline-block;
+          display: block;
+      }
+      .design-name::after {
+        content: "";
+      }
+      .design-archives {
+        padding-top: 1em;
       }
   }
+}
 
-  .design-name::after {
-    content: "";
-    margin: 5em;
+@media only screen and (min-width: 520px) {
+  .intro h2 {
+    font-size: 6vw;
   }
 
-  .design-archives {
-    padding-top: 1em;
+  .summary p:nth-of-type(1) {
+    padding: 10px 5vw;
+    padding-top: 32vw;
+  }
+
+  // sidebar move to the right
+  aside {
+    min-height: 90%;
+    padding: 2em 0.8em;
+    background: none;
   }
 }
