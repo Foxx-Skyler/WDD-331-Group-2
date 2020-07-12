@@ -3,16 +3,14 @@ links, paragraphs and headers, sidebar, variables, transparancy,  */
 @import url("https://use.typekit.net/gac3gtr.css");
 @import url("https://allfont.es/allfont.css?fonts=matura-mt-script-capitals");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+/* Font families and font sizes*/
 body {
   font-family: 'hightower-text', serif;
+  font-size: 5vw;
 }
 
 h1, h3, h4, .design-name {
   font-family: 'Matura MT Script Capitals', arial;
-}
-
-body {
-  font-size: 1.3em;
 }
 
 .summary {
@@ -20,26 +18,23 @@ body {
 }
 
 .summary p:nth-of-type(2) {
-  font-family: 'hightower-text', serif;
-  font-size: 0.9em;
+  font-size: 4vw;
 }
 
 .summary p:nth-of-type(1) {
-  font-size: 0.8em;
+  font-family: 'Dancing Script', cursive;
+  font-size: 6vw;
 }
 
-h2, #zen-summary {
+.intro h2 {
   font-family: 'Dancing Script', cursive;
+  font-size: 10vw;
 }
 
 a, li, abbr {
   color: black;
   text-decoration: none;
   list-style: none;
-}
-
-.intro h2 {
-  font-size: 10vw;
 }
 
 @media only screen and (min-width: 520px) {
@@ -74,8 +69,8 @@ a, li, abbr {
   .page-wrapper {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 5% 50% 1fr 20% 1fr;
-        grid-template-columns: 5% 50% 1fr 20% 1fr;
+    -ms-grid-columns: 5% 50% 1fr 25% 1fr;
+        grid-template-columns: 5% 50% 1fr 25% 1fr;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
   }
@@ -150,6 +145,10 @@ footer {
   padding: 1em;
 }
 
+footer a:hover {
+  color: #C3BEBE;
+}
+
 aside ul {
   background-color: #C3BEBE;
   padding: 1em;
@@ -171,10 +170,13 @@ aside ul .design-archives {
 @media only screen and (min-width: 520px) {
   .summary p:nth-of-type(1) {
     padding: 10px 5vw;
-    padding-top: 35vw;
+    padding-top: 26vw;
   }
   aside {
     margin: 2em 0;
+  }
+  .intro {
+    margin: 25px 0;
   }
 }
 
@@ -200,9 +202,9 @@ header {
 
 @media only screen and (min-width: 520px) {
   header {
-    background-size: 35vw;
+    background-size: 28vw;
     width: 50%;
-    height: 35vw;
+    height: 28vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

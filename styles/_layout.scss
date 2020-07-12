@@ -53,6 +53,9 @@ a:active {
 footer {
   background-color: $color-main;
   padding: 1em;
+  a:hover {
+    color: $color-background;
+  }
 }
 
 aside {
@@ -75,10 +78,15 @@ aside {
 @media only screen and (min-width: 520px) {
   .summary p:nth-of-type(1) {
     padding: 10px 5vw;
-    padding-top: 35vw;
+    padding-top: 26vw;
   }
 
   aside {
     margin: 2em 0;
   }
+
+  .intro {
+    margin: 25px 0;
+  }
+
 }
