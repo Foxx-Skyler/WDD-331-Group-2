@@ -5,7 +5,6 @@
     min-width: auto;
     background-image: url('assets/leaves.png');
     background-repeat: no-repeat;
-    //background-color: #99DE9D;
     background-attachment: fixed;
     background-size: cover;
 }
@@ -23,8 +22,8 @@ header {
 
 @media only screen and (min-width: 520px) {
     header {
-        margin-left: 3vw;
-        width: 40%;
-        height: 32vw;
+        background-size: 35vw;
+        width: 50%;
+        height: 35vw;  
     }
 }

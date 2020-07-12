@@ -38,15 +38,19 @@ a, li, abbr {
   list-style: none;
 }
 
+.intro h2 {
+  font-size: 10vw;
+}
+
 @media only screen and (min-width: 520px) {
   .summary p:nth-of-type(1) {
-    font-size: 1.5em;
+    font-size: 2vw;
   }
-  body {
-    font-size: 1em;
+  body, aside h3 {
+    font-size: 1.5vw;
   }
-  aside h3 {
-    font-size: 1em;
+  .intro h2 {
+    font-size: 4.5vw;
   }
 }
 
@@ -70,8 +74,8 @@ a, li, abbr {
   .page-wrapper {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 8% 45% 1fr 250px 1fr;
-        grid-template-columns: 8% 45% 1fr 250px 1fr;
+    -ms-grid-columns: 5% 50% 1fr 20% 1fr;
+        grid-template-columns: 5% 50% 1fr 20% 1fr;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
   }
@@ -83,7 +87,8 @@ a, li, abbr {
     -ms-grid-column: 4;
     grid-column: 4;
     -ms-grid-row: 1;
-    grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
   }
 }
 
@@ -110,7 +115,6 @@ a, li, abbr {
           transform: rotate(270deg);
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
-  font-size: 10vw;
 }
 
 .intro, .main, .wrapper, footer, h3 {
@@ -123,7 +127,8 @@ a, li, abbr {
 
 h3 {
   background: rgba(149, 65, 65, 0.9);
-  padding: 0.6em 1em;
+  padding: 0.8em 1em;
+  margin-top: 2px;
 }
 
 p {
@@ -164,17 +169,12 @@ aside ul .design-archives {
 }
 
 @media only screen and (min-width: 520px) {
-  .intro h2 {
-    font-size: 6vw;
-  }
   .summary p:nth-of-type(1) {
     padding: 10px 5vw;
-    padding-top: 32vw;
+    padding-top: 35vw;
   }
   aside {
-    min-height: 90%;
-    padding: 2em 0.8em;
-    background: none;
+    margin: 2em 0;
   }
 }
 
@@ -200,9 +200,9 @@ header {
 
 @media only screen and (min-width: 520px) {
   header {
-    margin-left: 3vw;
-    width: 40%;
-    height: 32vw;
+    background-size: 35vw;
+    width: 50%;
+    height: 35vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

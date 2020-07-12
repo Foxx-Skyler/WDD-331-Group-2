@@ -19,8 +19,7 @@
     top: 10em; 
     left: 0;
     transform: rotate(270deg);
-    transform-origin: 0 0;
-    font-size: 10vw;   
+    transform-origin: 0 0;   
 }
 
 .intro, .main, .wrapper, footer, h3 {
@@ -33,7 +32,8 @@
 
 h3 {
   background:$light-red;
-  padding: 0.6em 1em;
+  padding: 0.8em 1em;
+  margin-top: 2px;
 }
 
 p {
@@ -73,19 +73,12 @@ aside {
 }
 
 @media only screen and (min-width: 520px) {
-  .intro h2 {
-    font-size: 6vw;
-  }
-
   .summary p:nth-of-type(1) {
     padding: 10px 5vw;
-    padding-top: 32vw;
+    padding-top: 35vw;
   }
 
-  // sidebar move to the right
   aside {
-    min-height: 90%;
-    padding: 2em 0.8em;
-    background: none;
+    margin: 2em 0;
   }
 }
