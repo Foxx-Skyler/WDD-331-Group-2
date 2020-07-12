@@ -85,13 +85,13 @@ header {
 
 .cd-logo {
   /* logo box style */
-  background-color: #942525;
+  background-color:#e6e6e6;
   width: 120px;
 }
 
 @media only screen and (min-width: 1024px) {
   .cd-logo {
-    width: 180px;
+    width: 100px;
   }
 }
 .cd-main-nav {
