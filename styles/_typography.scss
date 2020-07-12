@@ -3,22 +3,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
 
-/* Font families and font sizes*/
+/** FONTS AND SIZES **/
 body {
     font-family: 'hightower-text', serif;
     font-size: 5vw;
 }
 
-h1, h3, h4, .design-name {
+h3, .design-name {
     font-family: 'Matura MT Script Capitals', arial;
 }
 
 .summary {
   text-align: center;
-  p:nth-of-type(2) {
-    //font-family: 'hightower-text', serif;
-    font-size: 4vw;
-  }
   p:nth-of-type(1) {
       font-family: 'Dancing Script', cursive;
       font-size: 6vw;
@@ -36,6 +32,7 @@ a, li, abbr {
     list-style: none;
 }
 
+/** SIZES FOR SCREENS **/
 @media only screen and (min-width: 520px) {
     .summary p:nth-of-type(1) {
         font-size: 2vw;
