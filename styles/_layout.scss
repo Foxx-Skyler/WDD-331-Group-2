@@ -4,22 +4,24 @@
 *:before,
 *:after {
   box-sizing: border-box;
-  margin: 0;
+  margin: -0.5px;
   padding: 0;
 }
 
 /** GENERAL **/
-.intro, .main, .wrapper, footer, h3 {
-  outline: 5px solid; //outline everything
+.preamble, .main, .wrapper {
+  border: black 5px solid; 
+  border-radius: 5px;
+  margin-right:0.5em;
 }
 h3 {
   background:$light-red;
   padding: 0.8em 1em;
-  margin-top: 2px;
 }
-p {
+.main p, .preamble p {
   background-color: $color-background;
   padding: 1em;
+  //padding-right: 2em;
   margin-bottom: -2px;
 }
 a:hover {
@@ -36,7 +38,7 @@ a:active {
   }
   h2 {
     position: fixed;
-    text-align: right;
+    //text-align: left;
     top: 10.2em; 
     left: 0;
     transform: rotate(270deg); //rotate header
@@ -44,6 +46,13 @@ a:active {
   }
   .summary p:nth-of-type(1) {
     padding-top: 70vw;
+  }
+  .summary {
+    margin:4vw;
+    margin-top:0;
+  }
+  .preamble {
+    margin-bottom: 4vw;
   }
 }
 
@@ -82,6 +91,19 @@ aside {
     .summary p:nth-of-type(1) {
       padding: 10px 5vw;
       padding-top: 26vw;
+    }
+  }
+  .main p, .preamble p {
+    padding-right: 1em;
+  }
+  .wrapper {
+    position: fixed;
+    top: 5px;
+    right: 10vw;
+    width: 20vw;
+    h3 {
+      padding: 5px;
+      padding-left: 10px;
     }
   }
 }

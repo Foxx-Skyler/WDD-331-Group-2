@@ -6,7 +6,7 @@
 /** FONTS AND SIZES **/
 body {
     font-family: 'hightower-text', serif;
-    font-size: 5vw;
+    font-size: 6vw;
 }
 
 h3, .design-name {
@@ -17,7 +17,7 @@ h3, .design-name {
   text-align: center;
   p:nth-of-type(1) {
       font-family: 'Dancing Script', cursive;
-      font-size: 6vw;
+      font-size: 6.5vw;
   }
 }
 
@@ -42,5 +42,11 @@ a, li, abbr {
     }
     .intro h2 {
         font-size: 4.5vw;
+    }
+    aside {
+        font-size: 1vw;
+        h3 {
+            font-size:1vw;
+        }
     }
 }
