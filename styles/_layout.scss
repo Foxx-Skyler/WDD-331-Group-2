@@ -38,7 +38,6 @@ a:active {
   }
   h2 {
     position: fixed;
-    //text-align: left;
     top: 10.2em; 
     left: 0;
     transform: rotate(270deg); //rotate header
@@ -68,6 +67,9 @@ footer {
 /** SIDEBAR **/
 aside {
   margin: 2em 0;
+  h3 {
+    background-color: $color-main;
+  }
   ul {
     background-color: $color-background;
     padding: 1em;
@@ -87,6 +89,9 @@ aside {
 /*** SCREEN CHANGE ***/
 @media only screen and (min-width: 520px) {
   .intro {
+    h2 {
+      left: 2%;
+    }
     margin: 25px 0;
     .summary p:nth-of-type(1) {
       padding: 10px 5vw;
