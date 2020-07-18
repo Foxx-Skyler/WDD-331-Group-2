@@ -118,6 +118,9 @@ h3 {
 }
 
 a:hover {
+  transition: 0.7s;
+  transform: scale(1.2);
+  transition: all ease .5s;
   color: #942525;
 }
 
