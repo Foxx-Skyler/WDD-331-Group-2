@@ -66,6 +66,9 @@ footer {
   background-color: $color-main;
   padding: 1em;
   a:hover {
+    transition: 0.5s;
+    transform: scale(1);
+    transition: all ease .5s;
     color: $color-background;
   }
 }
