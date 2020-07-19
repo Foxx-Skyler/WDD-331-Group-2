@@ -1,16 +1,9 @@
 /** BACKGROUND LEAVES ANIMATION **/
 #css-zen-garden {
   z-index: -1;
-  background:url("assets/Leaves_Anim.gif"); repeat;
+  background-image: none;
   background-attachment: fixed;
   width: 100%;
   height: 100px;
   box-sizing: border-box;
-  -webkit-animation: fall 15s linear infinite;
 }
-
-@-webkit-keyframes fall {
-    from { background-position: 0 0; }
-    to { background-position: -500px 500px; }
-}
-/** LEAVES ANIMATION END **/
