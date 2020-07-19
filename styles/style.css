@@ -11,6 +11,7 @@ body {
 
 /** BACKGROUND LEAVES ANIMATION **/
 #css-zen-garden {
+  z-index: -1;
   background:url("assets/Leaves_Anim.gif"); rgba(0, 0, 0, 0.5); repeat;
   background-attachment: fixed;
   width: 100%;
