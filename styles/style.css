@@ -17,12 +17,12 @@ body {
   height: 100px;
   text-align: center;
   box-sizing: border-box;
-  -webkit-animation: fall 10s linear infinite;
+  -webkit-animation: fall 15s linear infinite;
 }
 
 @-webkit-keyframes fall {
     from { background-position: 0 0; }
-    to { background-position: -300px 1000px; }
+    to { background-position: -500px 500px; }
 }
 /** LEAVES ANIMATION END **/
 
