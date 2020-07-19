@@ -13,10 +13,9 @@ body {
 #css-zen-garden {
   background:url("assets/Leaves_Anim.gif"); repeat;
   position: fixed;
-  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
   text-align: center;
-  height: 100px;
-  padding-top: 100%;
   box-sizing: border-box;
   -webkit-animation: fall 10s linear infinite;
 }
