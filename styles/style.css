@@ -9,6 +9,24 @@ body {
   font-size: 6vw;
 }
 
+/** BACKGROUND LEAVES ANIMATION **/
+.page-wrapper {
+  background:url("assets/Leaves_Anim.gif"); repeat;
+  width: 100%;
+  text-align: center;
+  height: 100px;
+  padding-top: 100%;
+  box-sizing: border-box;
+  -webkit-animation: slide 10s linear infinite;
+}
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 1000px; }
+}
+/** LEAVES ANIMATION END **/
+
+
 h3, .design-name {
   font-family: 'Matura MT Script Capitals', arial;
 }
