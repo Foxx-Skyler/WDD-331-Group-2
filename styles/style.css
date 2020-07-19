@@ -10,8 +10,8 @@ body {
 }
 
 /** BACKGROUND LEAVES ANIMATION **/
-#css-zen-garden::before {
-  background:url("assets/Leaves_Anim.gif"); repeat;
+#css-zen-garden {
+  background:url("assets/Leaves_Anim.gif"); rgba(0, 0, 0, 0.5); repeat;
   background-attachment: fixed;
   opacity: 0.5;
   width: 100%;
@@ -19,6 +19,9 @@ body {
   text-align: center;
   box-sizing: border-box;
   -webkit-animation: fall 15s linear infinite;
+}
+
+#css-zen-garden background img {
 }
 
 
